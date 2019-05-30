@@ -1,72 +1,363 @@
 <!DOCTYPE html>
+
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Full Stack Javascript Developer. I love coding and designing beautiful things. I have experience with creating full-stack applications using MERN Stack in addition to MySQL and Firebase."
+    />
+    <title>Laura Gillespie | Full Stack Web Developer</title>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laura Gillespie</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Frame Carousel CSS Plugin -->
+    <link rel="stylesheet" href="frame-carousel/jquery.frame-carousel.min.css" />
 
-</head>
+    <!-- Bootstrap 4 CSS CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-<body>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-default">
-                <div class="navbar-header">
-                    <div class="navbar-brand">Laura Gillespie</div>
-                </div>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Menu
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="index.html">About</a>
-                                <a class="dropdown-item" href="portfolio.html">Portfolio</a>
-                                <a class="dropdown-item" href="contact.html">Contact</a>
-                            </div>
-                        </div>
+    <!-- Google Font CDN Link -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:300,700|Roboto:300,400,500|Bree+Serif"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Font Awesome 5 CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/queries.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <div class="navbar-brand">Laura Gillespie</div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="
+    background: white;
+"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutMeSection">About</a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="#skillsSection">Skills</a>
+            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="#projectSection">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactSection">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a
+              class="nav-link github-link"
+              style="padding-bottom: 4px;"
+              target="_blank"
+              href="https://github.com/lagilles?tab=repositories"
+              ><i class="social-icons fab fa-github"></i
+            ></a>
+            <a
+              class="nav-link"
+              style="padding-bottom: 4px;"
+              target="_blank"
+              href="https://www.linkedin.com/in/lagilles"
+              ><i class="social-icons fab fa-linkedin-in"></i
+            ></a>
+          </div>
         </div>
-        </nav>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid p-0">
+      <div
+        class="container-fluid m-0 p-0"
+        style="min-height: 550px;
+      "
+      >
+        <div class="backgroundImage">
+          <img src="public/img/background.jpg" alt="Coding Background" id="backgroundImage" />
         </div>
-    </header>
+        <div id="textTron" class="col-sm-6">
+          <h1 class="display-4">Laura <span id="lastName">Gillespie</span></h1>
+          <h1 class="ml3" id="jobTitle">Full Stack Web Developer</h1>
+          <a id="arrow-styling" href="#aboutMeSection"><i class="fas fa-sort-down"></i></a>
+        </div>
+      </div>
+    </div>
 
-    <div class="content">
-
-        <div class="main">
-            <div class="col-md-12">
-                <h1 class="page-title">About Me</h1>
-                <p>
-                    <img src="assets/images/profileimage.jpg" alt="Profile Image" width="200px" height="200px">
-                </p>
-                <p>
-                    Hi there! My name is Laura Gillespie and I'm an aspiring Web Developer!
-                </p>
-                <p>
-                    I'm a Raleigh native and UNC - Chapel Hill grad. During my time in undergrad, I majored in 
-                    communications and spent time studying graphic design and social media marketing. I have 
-                    always considered myself a creative person and feel that web development is the perfect 
-                    outlet for me to create!
-                </p>
-                <p>
-                    Outside of my professional life, I love to run, play video games, and spend time with my 
-                    French Bulldog, Lulu.
-                </p>
+    <div id="aboutMeSection"></div>
+    <div class="container" id="aboutMeContainer">
+      <div class="row">
+        <div class="col text-center">
+          <div class="card-body pb-0">
+            <h5 class="card-title mb-5" id="aboutMeTitle">
+              <span id="aboutMeBorder"
+                ><span id="aboutMeTitle">ABOUT</span> <span id="aboutMeSpan">ME</span></span
+              >
+            </h5>
+            <div id="photoSection">
+              <img
+                src="public/img/LauraIcon.jpg"
+                alt="Photo of Laura Gillespie"
+                class="mr-4 mb-4"
+                id="LauraIcon"
+              />
             </div>
+            <p class="card-text mb-4" id="aboutMeText">
+              Full Stack Web Developer with a passion for technology and improving user experience
+              on the web. I graduated from UNC - Chapel Hill with a Bachelor of Arts Degree in
+              Communications and also recently graduated from the UNC Coding Boot Camp. In the Boot
+              Camp, I learned both front end and back end technologies, including, but not limited
+              to, HTML/CSS, Javascript, Node, MySQL, MongoDB, React and more all while working and
+              collaborating with my peers to create interesting and dynamic projects. I originally
+              taught myself HTML and CSS in middle school and continue to follow my passion for web
+              development.
+              <br />
+              <br />
+            </p>
+            <div id="photoSection">
+              <img
+                src="public/img/LuluIcon.jpg"
+                alt="Photo of Lulu Gillespie"
+                class="mr-4 mb-4"
+                id="LuluIcon"
+              />
+            </div>
+            <p class="card-text mb-4" id="aboutMeText">
+              In my spare time, I enjoy running, playing video games, studying Japanese, and
+              snuggling with my French Bulldog, Lulu. I believe that my education, passion and
+              interests give me a unique perspective in the tech industry as a great team player
+              with creative and innovative ideas.
+              <br />
+              <br />
+              どうぞよろしくお願いします ! <i class='fas fa-grin-beam'></i>
+              <br />
+              <br />
+              <br />
+              <br /><br /><br /><br /><br />
+            </p>
+            <!--<hr />-->
+          </div>
         </div>
+      </div>
     </div>
-</body>
-
-<div class="row">
-    <div class="col-md-12" id="footer">
-        &copy; Copyright 2018 Laura Gillespie
+    <div>
+      <div>
+        <div id="projectSection"></div>
+      </div>
     </div>
-</div>
 
+    <h5 id="projectsTitle" class="mb-4">MY FAVORITE <span id="projectsSpan">PROJECTS</span></h5>
+
+    <div class="container-fluid hide-parallex">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div class="parallax parallax1">
+            <a href="https://project-ivy.herokuapp.com/" target="_blank">
+              <p class="demoButton">Live Demo</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid hide-parallex">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div class="parallax parallax2">
+            <a href="https://proof-whiskey.herokuapp.com/" target="_blank">
+              <p class="demoButton2">Live Demo</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid hide-parallex">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div class="parallax parallax3">
+            <a href="https://lauragillespie.org/clickyGame" target="_blank">
+              <p class="demoButton3">Live Demo</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid hide-parallex">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div class="parallax parallax4">
+            <a href="https://lauragillespie.org/unit-4-game" target="_blank">
+              <p class="demoButton4">Live Demo</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contactSection"></div>
+    <div class="container-fluid form-bg pt-4">
+      <h5 id="contactTitle" class="mb-5 mt-4">
+        LET'S <span id="contactSpan">CONNECT!</span></span>
+      </h5>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <form
+            method="POST"
+            action="https://formspree.io/lagilles@alumni.unc.edu"
+            id="formspree"
+            class="pt-0 mt-0"
+          >
+            <div class="row" id="formatEmailMargin" style="margin-bottom: 20px;">
+              <div
+                class="col-sm-6"
+                style="
+          margin-bottom: -20px;
+          margin-top: 20px;
+      "
+              >
+                <input type="text" id="nameFormspree" name="name" placeholder="Name" required />
+              </div>
+              <div class="col-sm-6 emailDiv" style="margin-top: 20px;">
+                <input
+                  type="email"
+                  id="emailFormspree"
+                  name="_replyto"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <input
+                  type="text"
+                  id="subjectFormspree"
+                  name="_subject"
+                  placeholder="Subject Line"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <textarea
+                  id="textFormspree"
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <button id="submitFormspree" type="submit" value="Send">
+                  Send
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-4" style="margin-bottom: 40px;">
+          <div class="col-lg-12">
+            <a href="tel:919-818-9804" target="_blank"
+              ><i class="contact-icons 	fas fa-comments"></i
+            ></a>
+            <p class="contact-text">919 818 9804</p>
+          </div>
+          <div class="col-lg-12">
+            <a href="mailto:lagilles@alumni.unc.edu?subject=Talent Acquisition" target="_blank"
+              ><i class="contact-icons fas fa-paper-plane"></i
+            ></a>
+            <p class="contact-text">lagilles@alumni.unc.edu</p>
+          </div>
+          <div class="col-lg-12" style="display: flex; justify-content: center;">
+            <a id="resumeBtn" href="public/pdf/Laura_Gillespie_Resume.pdf" target="_blank" download>
+              VIEW MY RESUME &nbsp;&nbsp;<i class="far fa-address-card"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="formatFooter">
+      <p id="signatureText">Copyright Laura Gillespie &copy; 2019</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Bootstrap 4 Javascript CDN Links -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Anime.js CDN Links-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- Frame Carousel jQuery Plugin Link -->
+    <script type="text/javascript" src="frame-carousel/jquery.frame-carousel.min.js"></script>
+
+    <!-- External Javascript Link -->
+    <script rel="javascript" src="public/js/script.js"></script>
+
+    <!-- Sweet Alert 2 Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  </body>
 </html>
